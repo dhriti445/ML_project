@@ -41,9 +41,11 @@ ecg-cart-simple/
 ├── main.py                    the whole experiment (run this)
 ├── ECG_CART_Analysis.ipynb    same experiment, step by step (saved executed on the real data)
 ├── README.md  requirements.txt
-├── arrhythmia.data            you add this (UCI file)
+├── data
+      -arrhythmia.data            you add this (UCI file)
 ├── results.txt                metrics table + disclaimer (created by main.py)
-└── confusion_matrix.png  feature_importance.png  decision_tree.png   (created by main.py)
+└── output
+      -confusion_matrix.png  feature_importance.png  decision_tree.png   (created by main.py)
 ```
 
 ## Installation (Windows PowerShell)
@@ -119,5 +121,3 @@ Share: GitHub → repo → Settings → Collaborators → Add people → add fac
 
 1. B. Zhou, G. Garcia Jr, P. Rajbhandary, *Detecting Heart Abnormality using ECG with CART*, Stanford (course report).
 2. UCI Machine Learning Repository, Arrhythmia data set, https://archive.ics.uci.edu/dataset/5/arrhythmia
-3. Pedregosa et al., Scikit-learn, JMLR 12 (2011).
-4. Breiman, Random Forests, Machine Learning 45 (2001); Breiman et al., Classification and Regression Trees, 1984.
