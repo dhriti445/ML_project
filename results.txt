@@ -1,0 +1,5 @@
+               Test accuracy  Test balanced acc.  Test macro-F1  10-fold CV accuracy (all rows)
+CART (pruned)          0.632               0.261          0.237                           0.669
+Random Forest          0.728               0.360          0.369                           0.739
+
+This project is an academic machine-learning experiment using a historical dataset. Its predictions are not medical diagnoses and must not be used for clinical decision-making. Clinical use would require rigorous independent validation, regulatory review, and appropriate medical oversight.
