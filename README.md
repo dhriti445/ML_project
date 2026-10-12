@@ -1,8 +1,8 @@
 # ECG Arrhythmia Classification – CART and Random Forest
 
-UE24CS352A Machine Learning mini-project · Team: `<names / IDs – fill in>`
+UE24CS352A Machine Learning mini-project · 
+Team: Dhriti Kamani - PES1UG24AM085, Dhruv R - PES1UG24AM086
 
-> This project is an academic machine-learning experiment using a historical dataset. Its predictions are not medical diagnoses and must not be used for clinical decision-making. Clinical use would require rigorous independent validation, regulatory review, and appropriate medical oversight.
 
 ## What it does
 Predicts the heart-condition class (UCI labels 1–16; class 1 = normal; 13 classes occur) of a patient from 279 ECG/patient features, using the UCI Arrhythmia dataset (452 patients). Based on the Stanford paper *Detecting Heart Abnormality using ECG with CART* (Zhou, Garcia, Rajbhandary), which used R/rpart and reports ~80 % accuracy (its own protocol – **not our result**).
@@ -57,5 +57,4 @@ git branch -M main
 git remote add origin https://github.com/<you>/ecg-cart-simple.git
 git push -u origin main
 ```
-Create the repo as **Private** first, then add faculty/TAs under Settings → Collaborators.
 #
