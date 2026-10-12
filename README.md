@@ -9,7 +9,6 @@ UE24CS352A – Machine Learning mini-project. Team: Dhriti Kamani - PES1UG24AM08
 | Source code (`main.py`), executed notebook, README | ✅ done |
 | Real UCI dataset | ✅ used (452 × 279; class counts and missing values match the UCI documentation; `arrhythmia.data` is not redistributed – add your own copy) |
 | Real experiment | ✅ executed once (seed 42); outputs in `results.txt` and the three PNG figures |
-| Automated tests | ❌ none in this simple version (the larger version of the project has 29) |
 
 ## Individual contributions
 
