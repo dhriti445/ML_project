@@ -1,21 +1,3 @@
-"""ECG arrhythmia classification (UCI Arrhythmia data): CART decision tree + Random Forest.
-
-Run:  python main.py          (put arrhythmia.data next to this file, or in a data/ folder)
-
-What it does
-  1. Loads the data ('?' = missing), 452 patients x 279 features, label in the last column.
-  2. Holds out 30 % of patients as a TEST set (stratified, seed 42). Nothing is tuned on it.
-  3. Preprocessing (inside the model, so it is learned from training rows only):
-        median imputation; features that are >50 % missing in the training rows are dropped.
-  4. CART: small grid search (incl. pruning via ccp_alpha) with 5-fold CV on the TRAINING rows.
-     Random Forest: 300 trees (default settings).
-  5. Reports, for both models: test-set accuracy / macro-F1, and 10-fold CV accuracy on all
-     452 rows (the paper's cross-validation protocol, repeated 3 times).
-  6. Saves confusion_matrix.png, feature_importance.png, decision_tree.png and results.txt.
-
-This is an academic experiment on a historical dataset. Its predictions are not medical
-diagnoses and must not be used for clinical decision-making.
-"""
 import warnings
 from pathlib import Path
 
@@ -35,9 +17,7 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree
 warnings.filterwarnings("ignore")
 SEED = 42
 HERE = Path(__file__).resolve().parent
-DISCLAIMER = ("This project is an academic machine-learning experiment using a historical dataset. Its predictions are "
-              "not medical diagnoses and must not be used for clinical decision-making. Clinical use would require "
-              "rigorous independent validation, regulatory review, and appropriate medical oversight.")
+DISCLAIMER = ("This project is an academic machine-learning experiment using a historical dataset.")
 
 
 # ------------------------------------------------------------------ data
